@@ -1,9 +1,10 @@
 #! /bin/bash
 if [[ $1 == "test" ]]
 then
-  PSQL="psql --username=postgres --dbname=worldcuptest -t --no-align -c"
+  echo "Testing..."
+  PSQL="psql --username=postgres --dbname=world_cup_db_test -t --no-align -c"
 else
-  PSQL="psql --username=freecodecamp --dbname=worldcup -t --no-align -c"
+  PSQL="psql --username=postgres --dbname=world_cup_db -t --no-align -c"
 fi
 
 # Do not change code above this line. Use the PSQL variable above to query your database.
